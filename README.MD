@@ -108,6 +108,39 @@ This will load the Swagger UI where you can interact with and test all the API e
 
 ---
 
+## Running Tests
+
+### Run All Tests
+```bash
+pytest
+```
+
+### Run Unit Tests with Coverage
+```bash
+pytest --cov=app tests/unit/
+```
+
+### Run Integration Tests
+```bash
+pytest tests/integration/
+```
+
+### Run API Tests with Coverage
+```bash
+pytest --cov=app tests/api/
+```
+
+---
+
+## Testing Frameworks Used
+
+- **pytest**: For writing and executing tests
+- **pytest-cov**: For measuring code coverage
+- **unittest.mock**: For mocking database sessions in unit tests
+- **FastAPI TestClient**: For testing API endpoints
+
+---
+
 ## Testing
 
 Use the **Swagger UI** at http://localhost:8000/docs to test all endpoints. 
@@ -140,6 +173,14 @@ Use the **Swagger UI** at http://localhost:8000/docs to test all endpoints.
   "song_id": 1
 }
 ```
+
+---
+
+## Test Coverage
+
+> Overall test coverage: **83%**
+
+![Coverage Screenshot](image-1.png)
 
 ---
 

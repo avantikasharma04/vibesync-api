@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database import SessionLocal
-from models.song import Song
-from schemas.song import SongCreate, SongOut
+from app.database import SessionLocal
+from app.models.song import Song
+from app.schemas.song import SongCreate, SongOut
 
 router = APIRouter(prefix="/songs", tags=["Songs"])
 
